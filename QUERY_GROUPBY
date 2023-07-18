@@ -6,6 +6,10 @@ QUERY 1 - CONTARE QUANTI ISCRITTI CI SONO STATI OGNI ANNO;
 
 QUERY 2 - CONTARE GLI INSEGNANTI CHE HANNO L'UFFICIO NELLO STESSO EDIFICIO;
 
+  SELECT COUNT(*) AS `numero_insegnanti`, `office_address` AS `edidicio_comune` 
+  FROM `teachers` 
+  GROUP BY `edidicio_comune`; 
+
 QUERY 3 - CALCOLARE LA MEDIA DEI VOTI DI OGNI APPELLO D'ESAME;
 
 QUERY 4 - Contare quanti corsi di laurea ci sono per ogni dipartimento;
