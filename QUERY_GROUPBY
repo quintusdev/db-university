@@ -16,3 +16,7 @@ QUERY 3 - CALCOLARE LA MEDIA DEI VOTI DI OGNI APPELLO D'ESAME;
   GROUP BY `exam_id`; 
 
 QUERY 4 - Contare quanti corsi di laurea ci sono per ogni dipartimento;
+
+  SELECT COUNT(*) AS `numero_corsi`, `department_id`
+  FROM `degrees`
+  GROUP BY `department_id`;
