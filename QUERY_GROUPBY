@@ -11,5 +11,8 @@ QUERY 2 - CONTARE GLI INSEGNANTI CHE HANNO L'UFFICIO NELLO STESSO EDIFICIO;
   GROUP BY `edidicio_comune`; 
 
 QUERY 3 - CALCOLARE LA MEDIA DEI VOTI DI OGNI APPELLO D'ESAME;
+  SELECT ROUND(AVG(`vote`)) AS 'media_voto' 
+  FROM `exam_student` 
+  GROUP BY `exam_id`; 
 
 QUERY 4 - Contare quanti corsi di laurea ci sono per ogni dipartimento;
